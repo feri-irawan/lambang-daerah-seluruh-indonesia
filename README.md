@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lambang Daerah Seluruh Indonesia
 
-## Getting Started
+Ini adalah projek yang berisi lambang daerah seluruh Indonesia, 38 Provinsi, dan 513 Kabupaten/Kota.
 
-First, run the development server:
+Logo-logo yang ada didalam API adalah hasil Web scraping di Wikipedia, yang mana menurut saya URL yang ada di sana kurang rapih. Maka dari itu, projek ini dibuat agar orang-orang bisa lebih mudah mendapatkan lambang daerah dengan URL yang rapih, cocok untuk pembuatan input "daerah asal" pada form.
+
+## API
+
+### Lambang Provinsi
+
+Params:
+
+| Nama     | Deskripsi                                                                             |
+| -------- | ------------------------------------------------------------------------------------- |
+| `:size`  | Mengatur ukuran lambang, minimal 24                                                   |
+| `:index` | Index lambang, digunakan untuk mendapatkan 1 lambang, nilainya antara `1` sampai `38` |
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# Semua lambang
+GET https://symbolsofindonesia.vercel.app/api/provinces
+
+# Mengatur ukuran
+GET https://symbolsofindonesia.vercel.app/provinces/:size
+
+# Mendapatkan satu lambang
+GET https://symbolsofindonesia.vercel.app/api/provinces/:index/:size
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Lambang Provinsi
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Params:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+| Nama     | Deskripsi                                                                              |
+| -------- | -------------------------------------------------------------------------------------- |
+| `:size`  | Mengatur ukuran lambang, minimal 24                                                    |
+| `:index` | Index lambang, digunakan untuk mendapatkan 1 lambang, nilainya antara `1` sampai `514` |
 
-## Learn More
+```bash
+# Semua lambang
+GET https://symbolsofindonesia.vercel.app/api/provinces
 
-To learn more about Next.js, take a look at the following resources:
+# Mengatur ukuran
+GET https://symbolsofindonesia.vercel.app/provinces/:size
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Mendapatkan satu lambang
+GET https://symbolsofindonesia.vercel.app/api/provinces/:index/:size
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Kontribusi
 
-## Deploy on Vercel
+Rencananya projek ini akan menyediakan lambang yang lebih lengkap dari seluruh indonesia, seperti sekolah, dan instansi lainnya. Maka dari itu saya mengajak Anda untuk mari bersama-sama kita kembangkan projek ini.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Jika ada masalah harap disampaikan pada halaman issue.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Terima kasih, semoga projek ini bermanfaat.
