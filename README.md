@@ -2,7 +2,7 @@
 
 Ini adalah projek yang berisi lambang daerah seluruh Indonesia, 38 Provinsi, dan 513 Kabupaten/Kota.
 
-Logo-logo yang ada didalam API adalah hasil Web scraping di Wikipedia, yang mana menurut saya URL yang ada di sana kurang rapih. Maka dari itu, projek ini dibuat agar orang-orang bisa lebih mudah mendapatkan lambang daerah dengan URL yang rapih, cocok untuk pembuatan input "daerah asal" pada form.
+Logo-logo yang ada di dalam API adalah hasil Web scraping di Wikipedia, yang mana menurut saya URL yang ada di sana kurang rapih. Maka dari itu, projek ini dibuat agar orang-orang bisa lebih mudah mendapatkan lambang daerah dengan URL yang rapih, cocok untuk pembuatan input "daerah asal" pada form.
 
 ## API
 
@@ -17,13 +17,13 @@ Params:
 
 ```bash
 # Semua lambang
-GET https://symbolsofindonesia.vercel.app/api/provinces
+GET https://symbolsofindonesia.vercel.app/provinces
 
 # Mengatur ukuran
 GET https://symbolsofindonesia.vercel.app/provinces/:size
 
 # Mendapatkan satu lambang
-GET https://symbolsofindonesia.vercel.app/api/provinces/:index/:size
+GET https://symbolsofindonesia.vercel.app/provinces/:index/:size
 ```
 
 ### Lambang Provinsi
@@ -37,13 +37,13 @@ Params:
 
 ```bash
 # Semua lambang
-GET https://symbolsofindonesia.vercel.app/api/provinces
+GET https://symbolsofindonesia.vercel.app/regencies
 
 # Mengatur ukuran
-GET https://symbolsofindonesia.vercel.app/provinces/:size
+GET https://symbolsofindonesia.vercel.app/regencies/:size
 
 # Mendapatkan satu lambang
-GET https://symbolsofindonesia.vercel.app/api/provinces/:index/:size
+GET https://symbolsofindonesia.vercel.app/regencies/:index/:size
 ```
 
 ## Kontribusi
