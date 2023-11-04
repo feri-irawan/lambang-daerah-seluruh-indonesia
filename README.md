@@ -16,11 +16,8 @@ Params:
 | `:index` | Index lambang, digunakan untuk mendapatkan 1 lambang, nilainya antara `1` sampai `38` |
 
 ```bash
-# Semua lambang
-GET https://symbolsofindonesia.vercel.app/provinces
-
-# Mengatur ukuran
-GET https://symbolsofindonesia.vercel.app/provinces/:size
+# Medapatkan semua lambang dengan ukuran 200px
+GET https://symbolsofindonesia.vercel.app/provinces/200
 
 # Mendapatkan satu lambang
 GET https://symbolsofindonesia.vercel.app/provinces/:index/:size
@@ -36,11 +33,8 @@ Params:
 | `:index` | Index lambang, digunakan untuk mendapatkan 1 lambang, nilainya antara `1` sampai `514` |
 
 ```bash
-# Semua lambang
-GET https://symbolsofindonesia.vercel.app/regencies
-
-# Mengatur ukuran
-GET https://symbolsofindonesia.vercel.app/regencies/:size
+# Mendapatkan semua lambang dengan ukuran 200px
+GET https://symbolsofindonesia.vercel.app/regencies/200
 
 # Mendapatkan satu lambang
 GET https://symbolsofindonesia.vercel.app/regencies/:index/:size
