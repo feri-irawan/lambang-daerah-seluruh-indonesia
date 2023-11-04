@@ -1,6 +1,5 @@
 import { generateUrls } from "@/utils/generateUrls";
 import { getProvinces, getRegencies } from "@/utils/getContents";
-import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 
@@ -50,11 +49,9 @@ export default async function Home({
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 sm:p-8">
         {data.map((item) => (
           <div key={item.url} className="flex gap-4">
-            <Image
+            <img
               src={item.url}
               alt={item.title}
-              height={80}
-              width={80}
               className="aspect-square object-contain"
               loading="lazy"
             />
